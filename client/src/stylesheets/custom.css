@@ -1,0 +1,426 @@
+/* CSS Code for Styling Cards */
+/* Define a CSS class called "card" */
+.card {
+  /* Set the background color of elements with class "card" to white */
+  background-color: white;
+
+  /* Set the border properties for elements with class "card" */
+  border: 1px solid #b1b1b1;
+}
+
+/* Define a CSS class called "w-400" */
+.w-400 {
+  /* Set the width of elements with class "w-400" to 400 pixels */
+  width: 400px;
+}
+
+.content {
+  /* Set the padding of elements with class "content" to 20 pixels */
+  min-height: 85vh;
+  border: 1px solid #b1b1b1;
+}
+
+/* Define styles for elements with class "underline" */
+.underline {
+  /* Add underline to text and change cursor to pointer on hover */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Define styles for elements with class "cursor-pointer" */
+.cursor-pointer {
+  /* Change cursor to pointer on hover */
+  cursor: pointer;
+}
+
+/* Define styles for elements with class "uppercase" */
+.uppercase {
+  /* Transform text to uppercase */
+  text-transform: uppercase;
+}
+
+/* Define styles for italicized text */
+i {
+  /* Set font size of italicized text to 20 pixels */
+  font-size: 20px;
+}
+
+/* Movie card styles */
+.movie-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-rating {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+}
+
+.genre-btn {
+  border-radius: 20px;
+  margin: 4px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  transition: all 0.3s;
+}
+
+.genre-btn:hover {
+  background: #1890ff;
+  color: white;
+  border-color: #1890ff;
+}
+
+.search-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.search-section .ant-input-search {
+  max-width: 600px;
+}
+
+/* Enhanced Movie Search Button Styles */
+.movie-search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.movie-search-container .ant-input-search {
+  border-radius: 50px !important;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movie-search-container .ant-input-search:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 1);
+}
+
+.movie-search-container .ant-input-search-large .ant-input {
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  background: transparent;
+  color: #333;
+  font-weight: 500;
+}
+
+.movie-search-container .ant-input-search-large .ant-input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.movie-search-container .ant-input-search-button {
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 50%, #0050b3 100%);
+  border: none;
+  border-radius: 0 50px 50px 0 !important;
+  height: 54px;
+  padding: 0 25px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(24, 144, 255, 0.3);
+}
+
+.movie-search-container .ant-input-search-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.movie-search-container .ant-input-search-button:hover {
+  background: linear-gradient(135deg, #40a9ff 0%, #1890ff 50%, #096dd9 100%);
+  transform: translateX(2px);
+  box-shadow: 0 6px 20px rgba(24, 144, 255, 0.5);
+}
+
+.movie-search-container .ant-input-search-button:hover::before {
+  left: 100%;
+}
+
+.movie-search-container .ant-input-search-button:active {
+  transform: translateX(1px) scale(0.98);
+}
+
+.movie-search-container .ant-input-search-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Search button icon enhancement */
+.movie-search-container .ant-input-search-button .anticon {
+  margin-right: 8px;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.movie-search-container .ant-input-search-button:hover .anticon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Focus states */
+.movie-search-container .ant-input-search-large .ant-input:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.movie-search-container .ant-input-search:focus-within {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(24, 144, 255, 0.2);
+}
+
+/* Clear button styling */
+.movie-search-container .ant-input-clear-icon {
+  color: #999;
+  transition: color 0.3s;
+}
+
+.movie-search-container .ant-input-clear-icon:hover {
+  color: #1890ff;
+}
+
+/* Loading state */
+.movie-search-container .ant-input-search-button.loading {
+  background: linear-gradient(135deg, #d9d9d9 0%, #bfbfbf 100%);
+  cursor: not-allowed;
+}
+
+/* Search animation keyframes */
+@keyframes searchPulse {
+  0% { box-shadow: 0 0 0 0 rgba(24, 144, 255, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(24, 144, 255, 0.1); }
+  100% { box-shadow: 0 0 0 0 rgba(24, 144, 255, 0); }
+}
+
+@keyframes buttonShine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Active search state */
+.movie-search-container.searching .ant-input-search {
+  animation: searchPulse 2s infinite;
+}
+
+.movie-search-container.searching .ant-input-search-button {
+  background: linear-gradient(135deg, #52c41a 0%, #389e0d 50%, #237804 100%);
+  animation: none;
+}
+
+.movie-search-container.searching .ant-input-search-button::before {
+  animation: buttonShine 1.5s infinite;
+}
+
+/* Success state animation */
+.movie-search-container.success .ant-input-search {
+  box-shadow: 0 15px 40px rgba(82, 196, 26, 0.3);
+  animation: none;
+}
+
+/* Error state */
+.movie-search-container.error .ant-input-search {
+  box-shadow: 0 15px 40px rgba(245, 34, 45, 0.3);
+}
+
+.movie-search-container.error .ant-input-search-button {
+  background: linear-gradient(135deg, #ff4d4f 0%, #cf1322 50%, #a8071a 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-search-container {
+    max-width: 90%;
+  }
+  
+  .movie-search-container .ant-input-search-large .ant-input {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  
+  .movie-search-container .ant-input-search-button {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-search-container .ant-input-search-button {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+  
+  .movie-search-container .ant-input-search-large .ant-input {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+}
+
+.category-header {
+  margin: 30px 0 20px 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.movie-tabs .ant-tabs-tab {
+  font-weight: 500;
+}
+
+.modal-movie-poster {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Define styles for table elements */
+table {
+  /* Set border for table elements */
+  border: 1px solid #b1b1b1;
+}
+
+/* Define styles for table header cells */
+thead th {
+  /* Set bottom border and uppercase text for table header cells */
+  border-bottom: 1px solid #b1b1b1 !important;
+  text-transform: uppercase;
+}
+
+.search-input {
+  /* Set border for search input */
+  height: 60px;
+  border-radius: 5px;
+}
+
+.divider {
+  /* Set border for divider */
+  border: 1px solid #e1e1e1;
+  margin: 10px 0;
+}
+
+/* seats */
+.seat {
+  /* Set height, width, border, and cursor for seat elements */
+  height: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+}
+
+.selected-seat h1 {
+  /* Set color of seat number to white for selected seats */
+  color: white !important;
+}
+
+.selected-seat {
+  /* Set background color of selected seats */
+  background-color: #118838;
+}
+
+.booked-seat {
+  /* Set background color of booked seats */
+  background-color: #b1b1b1;
+}
+
+/* loader */
+.loader-parent {
+  /* This class defines the styles for the parent container of the loader. */
+
+  position: fixed;
+  /* The element will be positioned relative to the browser window and will not move when the user scrolls. */
+
+  background-color: black;
+  /* The background color of the loader-parent container is set to black. */
+
+  inset: 0;
+  /* This shorthand property sets the top, right, bottom, and left positions of the element to 0, effectively making the container cover the entire viewport. */
+
+  opacity: 0.8;
+  /* The opacity of the loader-parent container is set to 0.8, making it slightly transparent. */
+
+  display: flex;
+  /* The container's children (in this case, the loader) will be laid out in a horizontal row. */
+
+  justify-content: center;
+  /* The content of the container (the loader) will be horizontally centered within the container. */
+
+  align-items: center;
+  /* The content of the container (the loader) will be vertically centered within the container. */
+
+  z-index: 999999;
+  /* The z-index determines the stacking order of elements. Here, the loader-parent is given a very high z-index, ensuring it appears on top of other elements on the page. */
+}
+
+.loader {
+  /* This class defines the styles for the actual loader element. */
+
+  height: 30px;
+  /* The height of the loader is set to 30 pixels. */
+
+  width: 30px;
+  /* The width of the loader is set to 30 pixels. */
+
+  border: 4px solid var(--colour-secondary);
+  /* The loader has a border with a width of 4 pixels and a color specified as "--colour-secondary" (which might be a custom CSS variable). */
+
+  border-top-color: var(--colour-primary);
+  /* The top border color of the loader is set to "--colour-primary" (another custom CSS variable). This creates the appearance of a loading spinner with two different colored segments. */
+
+  border-radius: 50%;
+  /* The border-radius property is set to 50%, making the loader appear as a circle. */
+
+  animation: loader-anim 1s linear infinite;
+  /* The loader-anim animation is applied to the loader element. The animation will run for 1 second, will have a linear timing function, and will run infinitely. */
+}
+
+/* loader animation */
+@keyframes loader-anim {
+  /* This defines the keyframes for the "loader-anim" animation. Keyframes describe how an element should change at specific points during the animation. */
+
+  0% {
+    transform: rotate(0deg);
+  }
+  /* At 0% of the animation, the loader will be rotated 0 degrees. */
+
+  100% {
+    transform: rotate(360deg);
+  }
+  /* At 100% of the animation, the loader will be rotated 360 degrees. This creates the spinning effect. */
+}

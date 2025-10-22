@@ -1,0 +1,31 @@
+{
+  "name": "movie-ticket-booking",
+  "version": "1.0.0",
+  "description": "movie tickets booking application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrishnitjsr/movie-ticket-booking.git"
+  },
+  "keywords": [
+    "MERN-Stack-Application"
+  ],
+  "author": "dassujan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrishnitjsr/movie-ticket-booking/issues"
+  },
+  "homepage": "https://github.com/amrishnitjsr/movie-ticket-booking#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.1",
+    "nodemon": "^3.0.1"
+  }
+}
