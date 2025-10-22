@@ -198,7 +198,7 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Amrish Nit JSR**
+**Amrish**
 - GitHub: [@amrishnitjsr](https://github.com/amrishnitjsr)
 
 ## 🙏 Acknowledgments
